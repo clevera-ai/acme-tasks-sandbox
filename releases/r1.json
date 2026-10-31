@@ -1,0 +1,18 @@
+{
+  "id": "r1",
+  "title": "Export your projects to CSV",
+  "changelog": [
+    "New \"Export to CSV\" button on the Projects list downloads all of your projects (name, colour, status, task counts) as a CSV file."
+  ],
+  "ops": [
+    {
+      "type": "json",
+      "file": "src/config/flags.json",
+      "path": [
+        "exportCsv"
+      ],
+      "from": false,
+      "to": true
+    }
+  ]
+}

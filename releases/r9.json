@@ -1,0 +1,8 @@
+{
+  "id": "r9",
+  "title": "Slack integration is back",
+  "changelog": [
+    "The Slack integration returns to Integrations."
+  ],
+  "revertOf": "r7"
+}

@@ -1,0 +1,13 @@
+{
+  "exportCsv": false,
+  "addPeople": false,
+  "taskLabels": false,
+  "savedFilters": false,
+  "darkMode": false,
+  "keyboardShortcuts": false,
+  "bulkDelete": false,
+  "hideSlack": false,
+  "dueReminders": false,
+  "projectDescription": false,
+  "brokenDeploy": false
+}

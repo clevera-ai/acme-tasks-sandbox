@@ -1,0 +1,58 @@
+{
+  "id": "r6",
+  "title": "Labels, saved filters, dark mode, shortcuts and bulk delete",
+  "changelog": [
+    "Task labels: tag tasks as Bug, Feature, Design or Docs.",
+    "Saved filters bar: save an assignee/status filter and reapply it with one click.",
+    "Dark mode: switch it on in Settings > Profile > Appearance.",
+    "Keyboard shortcuts: press ? to see them all.",
+    "Bulk delete: tick several tasks and delete them together."
+  ],
+  "ops": [
+    {
+      "type": "json",
+      "file": "src/config/flags.json",
+      "path": [
+        "taskLabels"
+      ],
+      "from": false,
+      "to": true
+    },
+    {
+      "type": "json",
+      "file": "src/config/flags.json",
+      "path": [
+        "savedFilters"
+      ],
+      "from": false,
+      "to": true
+    },
+    {
+      "type": "json",
+      "file": "src/config/flags.json",
+      "path": [
+        "darkMode"
+      ],
+      "from": false,
+      "to": true
+    },
+    {
+      "type": "json",
+      "file": "src/config/flags.json",
+      "path": [
+        "keyboardShortcuts"
+      ],
+      "from": false,
+      "to": true
+    },
+    {
+      "type": "json",
+      "file": "src/config/flags.json",
+      "path": [
+        "bulkDelete"
+      ],
+      "from": false,
+      "to": true
+    }
+  ]
+}

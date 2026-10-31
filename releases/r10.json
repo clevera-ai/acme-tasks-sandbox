@@ -1,0 +1,18 @@
+{
+  "id": "r10",
+  "title": "Faster navigation loading",
+  "changelog": [
+    "Navigation now loads items lazily for a quicker first paint."
+  ],
+  "ops": [
+    {
+      "type": "json",
+      "file": "src/config/flags.json",
+      "path": [
+        "brokenDeploy"
+      ],
+      "from": false,
+      "to": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "r7",
+  "title": "Slack integration removed",
+  "changelog": [
+    "The Slack integration is retired and its card is gone from Integrations. Google Calendar is unchanged."
+  ],
+  "ops": [
+    {
+      "type": "json",
+      "file": "src/config/flags.json",
+      "path": [
+        "hideSlack"
+      ],
+      "from": false,
+      "to": true
+    }
+  ]
+}

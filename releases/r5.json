@@ -1,0 +1,44 @@
+{
+  "id": "r5",
+  "title": "Internal cleanup of the date helper",
+  "release": false,
+  "changelog": [
+    "Renamed an internal date helper and documented it. No user-facing change."
+  ],
+  "ops": [
+    {
+      "type": "text",
+      "file": "src/lib/util.ts",
+      "from": "// Date and formatting helpers.\n",
+      "to": "// Date and formatting helpers.\n// Internal: shared by the tasks, billing and members views; not part of any user-facing behaviour.\n"
+    },
+    {
+      "type": "text",
+      "file": "src/lib/util.ts",
+      "from": "shortDate",
+      "to": "formatShortDate",
+      "all": true
+    },
+    {
+      "type": "text",
+      "file": "src/pages/Billing.tsx",
+      "from": "shortDate",
+      "to": "formatShortDate",
+      "all": true
+    },
+    {
+      "type": "text",
+      "file": "src/pages/ProjectDetail.tsx",
+      "from": "shortDate",
+      "to": "formatShortDate",
+      "all": true
+    },
+    {
+      "type": "text",
+      "file": "src/pages/Settings.tsx",
+      "from": "shortDate",
+      "to": "formatShortDate",
+      "all": true
+    }
+  ]
+}

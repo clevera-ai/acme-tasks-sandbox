@@ -1,0 +1,74 @@
+{
+  "id": "r3",
+  "title": "Clearer button labels and headings",
+  "changelog": [
+    "\"Create project\" is now \"New project\" and \"Add task\" is now \"New task\".",
+    "\"Projects\" heading is now \"All projects\"; \"Invoices\" is now \"Billing history\".",
+    "\"Change plan\" is now \"Switch plan\", \"Save changes\" is now \"Save profile\" and \"Connect\" is now \"Connect app\"."
+  ],
+  "ops": [
+    {
+      "type": "json",
+      "file": "src/config/copy.json",
+      "path": [
+        "projects.heading"
+      ],
+      "from": "Projects",
+      "to": "All projects"
+    },
+    {
+      "type": "json",
+      "file": "src/config/copy.json",
+      "path": [
+        "projects.create"
+      ],
+      "from": "Create project",
+      "to": "New project"
+    },
+    {
+      "type": "json",
+      "file": "src/config/copy.json",
+      "path": [
+        "tasks.create"
+      ],
+      "from": "Add task",
+      "to": "New task"
+    },
+    {
+      "type": "json",
+      "file": "src/config/copy.json",
+      "path": [
+        "billing.changePlan"
+      ],
+      "from": "Change plan",
+      "to": "Switch plan"
+    },
+    {
+      "type": "json",
+      "file": "src/config/copy.json",
+      "path": [
+        "billing.invoices"
+      ],
+      "from": "Invoices",
+      "to": "Billing history"
+    },
+    {
+      "type": "json",
+      "file": "src/config/copy.json",
+      "path": [
+        "settings.save"
+      ],
+      "from": "Save changes",
+      "to": "Save profile"
+    },
+    {
+      "type": "json",
+      "file": "src/config/copy.json",
+      "path": [
+        "integrations.connect"
+      ],
+      "from": "Connect",
+      "to": "Connect app"
+    }
+  ]
+}

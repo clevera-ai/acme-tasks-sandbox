@@ -1,0 +1,64 @@
+{
+  "id": "r2",
+  "title": "\"Invite teammates\" is now \"Add people\"",
+  "changelog": [
+    "\"Invite teammates\" is renamed \"Add people\" everywhere.",
+    "Add people moves out of Settings > Members into a button in the top bar that opens a dialog, so you can add someone from any page."
+  ],
+  "ops": [
+    {
+      "type": "json",
+      "file": "src/config/flags.json",
+      "path": [
+        "addPeople"
+      ],
+      "from": false,
+      "to": true
+    },
+    {
+      "type": "json",
+      "file": "src/config/copy.json",
+      "path": [
+        "members.inviteHeading"
+      ],
+      "from": "Invite teammates",
+      "to": "Add people"
+    },
+    {
+      "type": "json",
+      "file": "src/config/copy.json",
+      "path": [
+        "members.inviteHint"
+      ],
+      "from": "Invite teammates by email and choose what they can do.",
+      "to": "Add people by email and choose what they can do."
+    },
+    {
+      "type": "json",
+      "file": "src/config/copy.json",
+      "path": [
+        "members.inviteButton"
+      ],
+      "from": "Invite teammates",
+      "to": "Add people"
+    },
+    {
+      "type": "json",
+      "file": "src/config/copy.json",
+      "path": [
+        "invite.dialogTitle"
+      ],
+      "from": "Invite teammates",
+      "to": "Add people"
+    },
+    {
+      "type": "json",
+      "file": "src/config/copy.json",
+      "path": [
+        "topbar.addPeople"
+      ],
+      "from": "Invite teammates",
+      "to": "Add people"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "r8a",
+  "title": "Due-date reminders",
+  "changelog": [
+    "New \"Due-date reminders\" toggle in Settings > Notifications."
+  ],
+  "ops": [
+    {
+      "type": "json",
+      "file": "src/config/flags.json",
+      "path": [
+        "dueReminders"
+      ],
+      "from": false,
+      "to": true
+    }
+  ]
+}

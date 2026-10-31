@@ -1,0 +1,55 @@
+{
+  "id": "r4",
+  "title": "A fresh new look",
+  "changelog": [
+    "New teal accent colour, rounder corners and roomier spacing throughout the app.",
+    "No changes to wording or how anything works."
+  ],
+  "ops": [
+    {
+      "type": "json",
+      "file": "src/config/theme.json",
+      "path": [
+        "brand"
+      ],
+      "from": "#4f46e5",
+      "to": "#0d9488"
+    },
+    {
+      "type": "json",
+      "file": "src/config/theme.json",
+      "path": [
+        "brandHover"
+      ],
+      "from": "#4338ca",
+      "to": "#0f766e"
+    },
+    {
+      "type": "json",
+      "file": "src/config/theme.json",
+      "path": [
+        "radius"
+      ],
+      "from": "10px",
+      "to": "16px"
+    },
+    {
+      "type": "json",
+      "file": "src/config/theme.json",
+      "path": [
+        "pagePadding"
+      ],
+      "from": "2rem",
+      "to": "2.75rem"
+    },
+    {
+      "type": "json",
+      "file": "src/config/theme.json",
+      "path": [
+        "cardPadding"
+      ],
+      "from": "1.25rem",
+      "to": "1.75rem"
+    }
+  ]
+}

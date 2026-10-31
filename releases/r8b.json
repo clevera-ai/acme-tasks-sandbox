@@ -1,0 +1,18 @@
+{
+  "id": "r8b",
+  "title": "Project descriptions",
+  "changelog": [
+    "Projects now have a description field: add it when creating or renaming a project, and read it on the Projects list and project page."
+  ],
+  "ops": [
+    {
+      "type": "json",
+      "file": "src/config/flags.json",
+      "path": [
+        "projectDescription"
+      ],
+      "from": false,
+      "to": true
+    }
+  ]
+}

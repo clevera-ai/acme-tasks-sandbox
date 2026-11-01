@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.14 - 2026-11-01
+
+"All projects" is now "Your projects"
+
+- The Projects page heading "All projects" is now "Your projects".
+
 ## v1.13 - 2026-11-01
 
 "New task" is now "Create task"

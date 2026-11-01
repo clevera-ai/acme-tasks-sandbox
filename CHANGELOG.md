@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.21 - 2026-11-01
+
+"Create task" is now "Add task"
+
+- The "Create task" button on a project's task list is now "Add task".
+
 ## v1.20 - 2026-11-01
 
 "Connect app" is now "Install app"

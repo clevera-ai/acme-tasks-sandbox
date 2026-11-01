@@ -7,7 +7,7 @@
   "projects.create": "Add workspace",
   "projects.exportCsv": "Download CSV",
   "tasks.heading": "Tasks",
-  "tasks.create": "Create task",
+  "tasks.create": "Add task",
   "members.inviteHeading": "Add people",
   "members.inviteHint": "Add people by email and choose what they can do.",
   "members.inviteButton": "Add people",

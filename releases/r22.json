@@ -1,0 +1,6 @@
+{
+  "id": "r22",
+  "title": "\"Settings\" is now \"Preferences\"",
+  "changelog": ["The \"Settings\" item in the sidebar is now called \"Preferences\"."],
+  "ops": [{ "type": "json", "file": "src/config/copy.json", "path": ["nav.settings"], "from": "Settings", "to": "Preferences" }]
+}

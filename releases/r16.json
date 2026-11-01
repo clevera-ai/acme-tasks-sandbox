@@ -1,0 +1,6 @@
+{
+  "id": "r16",
+  "title": "\"Switch plan\" is now \"Change plan\"",
+  "changelog": ["The \"Switch plan\" button on the Billing page is now \"Change plan\"."],
+  "ops": [{ "type": "json", "file": "src/config/copy.json", "path": ["billing.changePlan"], "from": "Switch plan", "to": "Change plan" }]
+}

@@ -1,0 +1,6 @@
+{
+  "id": "r17",
+  "title": "\"Export to CSV\" is now \"Download CSV\"",
+  "changelog": ["The \"Export to CSV\" button is now \"Download CSV\"."],
+  "ops": [{ "type": "json", "file": "src/config/copy.json", "path": ["projects.exportCsv"], "from": "Export to CSV", "to": "Download CSV" }]
+}

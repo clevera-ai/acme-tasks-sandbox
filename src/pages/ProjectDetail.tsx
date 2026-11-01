@@ -5,7 +5,7 @@ import { t } from '../lib/copy'
 import { act, memberName, useStore } from '../lib/store'
 import type { Priority, Status, Task } from '../lib/seed'
 import { Avatar, Badge, Button, ConfirmDialog, EmptyState, Modal, PageHeader, SelectField, TextField, cx, useToast } from '../components/ui'
-import { LABELS, shortDate, todayIso } from '../lib/util'
+import { LABELS, formatShortDate, todayIso } from '../lib/util'
 
 const STATUS_LABEL: Record<Status, string> = { todo: 'To do', in_progress: 'In progress', done: 'Done' }
 const PRIORITY_TONE = { High: 'red', Medium: 'amber', Low: 'gray' } as const
@@ -165,7 +165,7 @@ export default function ProjectDetail() {
                     <td className="px-4 py-3">
                       {x.assigneeId ? <span className="flex items-center gap-2"><Avatar name={memberName(state, x.assigneeId)} size={24} />{memberName(state, x.assigneeId)}</span> : <span className="text-muted">Unassigned</span>}
                     </td>
-                    <td className={cx('px-4 py-3 whitespace-nowrap', overdue && 'font-medium text-red-600')}>{shortDate(x.due)}{overdue && ' (overdue)'}</td>
+                    <td className={cx('px-4 py-3 whitespace-nowrap', overdue && 'font-medium text-red-600')}>{formatShortDate(x.due)}{overdue && ' (overdue)'}</td>
                     <td className="px-4 py-3"><Badge tone={PRIORITY_TONE[x.priority]}>{x.priority}</Badge></td>
                     <td className="px-4 py-3">
                       <select aria-label={`Status for ${x.title}`} value={x.status} disabled={project.archived}

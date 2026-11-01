@@ -1,4 +1,5 @@
 // Date and formatting helpers.
+// Internal: shared by the tasks, billing and members views; not part of any user-facing behaviour.
 export const DEMO_EMAIL = 'demo@acme-tasks.test'
 
 export function uid(prefix: string): string {
@@ -17,7 +18,7 @@ export function daysFromNow(n: number): string {
   return `${d.getFullYear()}-${m}-${day}`
 }
 
-export function shortDate(iso: string): string {
+export function formatShortDate(iso: string): string {
   if (!iso) return 'No date'
   const d = new Date(`${iso}T00:00:00`)
   return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })

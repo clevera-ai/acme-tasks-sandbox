@@ -6,7 +6,7 @@ import { act, useStore } from '../lib/store'
 import type { AppState } from '../lib/seed'
 import { Avatar, Badge, Button, Card, ConfirmDialog, EmptyState, PageHeader, SelectField, Switch, TextField, cx, useToast } from '../components/ui'
 import { InviteForm } from '../components/InviteForm'
-import { initials, shortDate } from '../lib/util'
+import { initials, formatShortDate } from '../lib/util'
 
 export function SettingsLayout() {
   const tab = ({ isActive }: { isActive: boolean }) =>
@@ -122,7 +122,7 @@ export function Members() {
                   <tr key={m.id} className="border-b border-line last:border-0">
                     <td className="px-4 py-3">
                       <span className="flex items-center gap-3"><Avatar name={m.name} size={32} />
-                        <span><span className="block font-medium">{m.status === 'Invited' ? m.email : m.name}</span><span className="block text-xs text-muted">{m.status === 'Invited' ? `Invited ${shortDate(m.invitedAt ?? '')}` : m.email}</span></span>
+                        <span><span className="block font-medium">{m.status === 'Invited' ? m.email : m.name}</span><span className="block text-xs text-muted">{m.status === 'Invited' ? `Invited ${formatShortDate(m.invitedAt ?? '')}` : m.email}</span></span>
                       </span>
                     </td>
                     <td className="px-4 py-3">{m.role}</td>

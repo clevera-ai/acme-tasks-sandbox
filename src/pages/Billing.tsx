@@ -3,7 +3,7 @@ import { t } from '../lib/copy'
 import { act, useStore } from '../lib/store'
 import type { PlanName } from '../lib/seed'
 import { Badge, Button, Card, ConfirmDialog, EmptyState, PageHeader, useToast } from '../components/ui'
-import { downloadFile, money, shortDate } from '../lib/util'
+import { downloadFile, money, formatShortDate } from '../lib/util'
 
 const PLANS: { name: PlanName; price: number; blurb: string; features: string[] }[] = [
   { name: 'Free', price: 0, blurb: 'For trying things out.', features: ['3 projects', 'Up to 3 members', 'Community support'] },
@@ -56,7 +56,7 @@ export default function Billing() {
               {invoices.map((i) => (
                 <tr key={i.id} className="border-b border-line last:border-0">
                   <td className="px-4 py-3 font-medium">{i.id}</td>
-                  <td className="px-4 py-3">{shortDate(i.date)}</td>
+                  <td className="px-4 py-3">{formatShortDate(i.date)}</td>
                   <td className="px-4 py-3">{i.plan}</td>
                   <td className="px-4 py-3">{money(i.amount)}</td>
                   <td className="px-4 py-3"><Badge tone="green">{i.status}</Badge></td>

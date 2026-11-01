@@ -2,7 +2,7 @@
   "nav.projects": "Workspaces",
   "nav.integrations": "Apps",
   "nav.billing": "Billing",
-  "nav.settings": "Settings",
+  "nav.settings": "Preferences",
   "projects.heading": "Your workspaces",
   "projects.create": "New workspace",
   "projects.exportCsv": "Export to spreadsheet",

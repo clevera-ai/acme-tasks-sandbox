@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.24 - 2026-11-01
+
+"Settings" is now "Preferences"
+
+- The "Settings" item in the sidebar is now called "Preferences".
+
 ## v1.23 - 2026-11-01
 
 Clearer workspace buttons

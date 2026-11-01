@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.3 - 2026-11-01
+
+Clearer button labels and headings
+
+- "Create project" is now "New project" and "Add task" is now "New task".
+- "Projects" heading is now "All projects"; "Invoices" is now "Billing history".
+- "Change plan" is now "Switch plan", "Save changes" is now "Save profile" and "Connect" is now "Connect app".
+
 ## v1.2 - 2026-11-01
 
 "Invite teammates" is now "Add people"

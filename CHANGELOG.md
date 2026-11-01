@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.7 - 2026-11-01
+
+Slack integration is back
+
+- The Slack integration returns to Integrations.
+
 ## v1.6 - 2026-11-01
 
 Slack integration removed

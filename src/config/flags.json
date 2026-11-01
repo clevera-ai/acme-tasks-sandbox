@@ -6,7 +6,7 @@
   "darkMode": true,
   "keyboardShortcuts": true,
   "bulkDelete": true,
-  "hideSlack": true,
+  "hideSlack": false,
   "dueReminders": false,
   "projectDescription": false,
   "brokenDeploy": false

@@ -7,7 +7,7 @@
   "projects.create": "New project",
   "projects.exportCsv": "Export to CSV",
   "tasks.heading": "Tasks",
-  "tasks.create": "New task",
+  "tasks.create": "Create task",
   "members.inviteHeading": "Add people",
   "members.inviteHint": "Add people by email and choose what they can do.",
   "members.inviteButton": "Add people",

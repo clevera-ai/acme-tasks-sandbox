@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.13 - 2026-11-01
+
+"New task" is now "Create task"
+
+- The "New task" button on a project's task list is now "Create task".
+
 ## v1.12 - 2026-11-01
 
 Slack integration removed

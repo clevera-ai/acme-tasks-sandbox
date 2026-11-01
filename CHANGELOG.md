@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.2 - 2026-11-01
+
+"Invite teammates" is now "Add people"
+
+- "Invite teammates" is renamed "Add people" everywhere.
+- Add people moves out of Settings > Members into a button in the top bar that opens a dialog, so you can add someone from any page.
+
 ## v1.1 - 2026-11-01
 
 Export your projects to CSV

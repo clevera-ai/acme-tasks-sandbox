@@ -1,6 +1,6 @@
 {
   "exportCsv": true,
-  "addPeople": false,
+  "addPeople": true,
   "taskLabels": false,
   "savedFilters": false,
   "darkMode": false,

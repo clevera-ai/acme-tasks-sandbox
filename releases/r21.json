@@ -1,0 +1,9 @@
+{
+  "id": "r21",
+  "title": "Clearer workspace buttons",
+  "changelog": ["\"Add workspace\" is now \"New workspace\".", "\"Download CSV\" is now \"Export to spreadsheet\"."],
+  "ops": [
+    { "type": "json", "file": "src/config/copy.json", "path": ["projects.create"], "from": "Add workspace", "to": "New workspace" },
+    { "type": "json", "file": "src/config/copy.json", "path": ["projects.exportCsv"], "from": "Download CSV", "to": "Export to spreadsheet" }
+  ]
+}

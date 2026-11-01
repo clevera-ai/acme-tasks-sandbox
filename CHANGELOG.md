@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.20 - 2026-11-01
+
+"Connect app" is now "Install app"
+
+- The "Connect app" button on the Integrations page is now "Install app".
+
 ## v1.19 - 2026-11-01
 
 "Export to CSV" is now "Download CSV"

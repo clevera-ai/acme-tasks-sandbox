@@ -1,0 +1,6 @@
+{
+  "id": "r13",
+  "title": "\"New project\" is now \"Add project\"",
+  "changelog": ["The \"New project\" button on the Projects page is now \"Add project\"."],
+  "ops": [{ "type": "json", "file": "src/config/copy.json", "path": ["projects.create"], "from": "New project", "to": "Add project" }]
+}

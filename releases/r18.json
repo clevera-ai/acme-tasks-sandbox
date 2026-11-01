@@ -1,0 +1,6 @@
+{
+  "id": "r18",
+  "title": "\"Connect app\" is now \"Install app\"",
+  "changelog": ["The \"Connect app\" button on the Integrations page is now \"Install app\"."],
+  "ops": [{ "type": "json", "file": "src/config/copy.json", "path": ["integrations.connect"], "from": "Connect app", "to": "Install app" }]
+}

@@ -1,0 +1,6 @@
+{
+  "id": "r19",
+  "title": "\"Create task\" is now \"Add task\"",
+  "changelog": ["The \"Create task\" button on a project's task list is now \"Add task\"."],
+  "ops": [{ "type": "json", "file": "src/config/copy.json", "path": ["tasks.create"], "from": "Create task", "to": "Add task" }]
+}

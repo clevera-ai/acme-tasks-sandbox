@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.23 - 2026-11-01
+
+Clearer workspace buttons
+
+- "Add workspace" is now "New workspace".
+- "Download CSV" is now "Export to spreadsheet".
+
 ## v1.22 - 2026-11-01
 
 "Integrations" is now "Apps"

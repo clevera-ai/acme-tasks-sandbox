@@ -1,0 +1,10 @@
+{
+  "id": "r14",
+  "title": "Projects are now called Workspaces",
+  "changelog": ["\"Projects\" is renamed \"Workspaces\" everywhere: the sidebar item, the page heading and every button that said project."],
+  "ops": [
+    { "type": "json", "file": "src/config/copy.json", "path": ["nav.projects"], "from": "Projects", "to": "Workspaces" },
+    { "type": "json", "file": "src/config/copy.json", "path": ["projects.heading"], "from": "Your projects", "to": "Your workspaces" },
+    { "type": "json", "file": "src/config/copy.json", "path": ["projects.create"], "from": "Add project", "to": "Add workspace" }
+  ]
+}

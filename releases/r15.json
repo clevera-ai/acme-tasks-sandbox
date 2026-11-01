@@ -1,0 +1,6 @@
+{
+  "id": "r15",
+  "title": "\"Billing history\" is now \"Invoices\"",
+  "changelog": ["The \"Billing history\" list on the Billing page is now called \"Invoices\"."],
+  "ops": [{ "type": "json", "file": "src/config/copy.json", "path": ["billing.invoices"], "from": "Billing history", "to": "Invoices" }]
+}

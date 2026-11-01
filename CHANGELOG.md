@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.18 - 2026-11-01
+
+"Switch plan" is now "Change plan"
+
+- The "Switch plan" button on the Billing page is now "Change plan".
+
 ## v1.17 - 2026-11-01
 
 "Billing history" is now "Invoices"

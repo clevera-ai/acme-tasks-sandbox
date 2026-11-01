@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.12 - 2026-11-01
+
+Slack integration removed
+
+- The Slack integration is retired and its card is gone from Integrations. Google Calendar is unchanged.
+
 ## v1.11 - 2026-11-01
 
 Revert "Faster navigation loading"

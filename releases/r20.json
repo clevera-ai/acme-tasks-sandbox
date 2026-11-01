@@ -1,0 +1,6 @@
+{
+  "id": "r20",
+  "title": "\"Integrations\" is now \"Apps\"",
+  "changelog": ["The \"Integrations\" item in the sidebar is now called \"Apps\"."],
+  "ops": [{ "type": "json", "file": "src/config/copy.json", "path": ["nav.integrations"], "from": "Integrations", "to": "Apps" }]
+}

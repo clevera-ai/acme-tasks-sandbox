@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.10 - 2026-11-01
+
+Faster navigation loading
+
+- Navigation now loads items lazily for a quicker first paint.
+
 ## v1.9 - 2026-11-01
 
 Project descriptions

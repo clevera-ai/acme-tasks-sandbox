@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.11 - 2026-11-01
+
+Revert "Faster navigation loading"
+
+- Undoes the "Faster navigation loading" change (release set r10).
+- Reverted: Navigation now loads items lazily for a quicker first paint.
+
 ## v1.10 - 2026-11-01
 
 Faster navigation loading

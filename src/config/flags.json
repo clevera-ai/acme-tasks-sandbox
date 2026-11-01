@@ -9,5 +9,5 @@
   "hideSlack": false,
   "dueReminders": true,
   "projectDescription": true,
-  "brokenDeploy": true
+  "brokenDeploy": false
 }

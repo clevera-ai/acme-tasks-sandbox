@@ -1,0 +1,6 @@
+{
+  "id": "r12",
+  "title": "\"All projects\" is now \"Your projects\"",
+  "changelog": ["The Projects page heading \"All projects\" is now \"Your projects\"."],
+  "ops": [{ "type": "json", "file": "src/config/copy.json", "path": ["projects.heading"], "from": "All projects", "to": "Your projects" }]
+}

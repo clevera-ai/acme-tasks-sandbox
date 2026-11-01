@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.17 - 2026-11-01
+
+"Billing history" is now "Invoices"
+
+- The "Billing history" list on the Billing page is now called "Invoices".
+
 ## v1.16 - 2026-11-01
 
 Projects are now called Workspaces

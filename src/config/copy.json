@@ -1,10 +1,10 @@
 {
-  "nav.projects": "Projects",
+  "nav.projects": "Workspaces",
   "nav.integrations": "Integrations",
   "nav.billing": "Billing",
   "nav.settings": "Settings",
-  "projects.heading": "Your projects",
-  "projects.create": "Add project",
+  "projects.heading": "Your workspaces",
+  "projects.create": "Add workspace",
   "projects.exportCsv": "Export to CSV",
   "tasks.heading": "Tasks",
   "tasks.create": "Create task",

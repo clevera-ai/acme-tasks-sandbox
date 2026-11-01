@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.16 - 2026-11-01
+
+Projects are now called Workspaces
+
+- "Projects" is renamed "Workspaces" everywhere: the sidebar item, the page heading and every button that said project.
+
 ## v1.15 - 2026-11-01
 
 "New project" is now "Add project"

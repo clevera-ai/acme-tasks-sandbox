@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.5 - 2026-11-01
+
+Labels, saved filters, dark mode, shortcuts and bulk delete
+
+- Task labels: tag tasks as Bug, Feature, Design or Docs.
+- Saved filters bar: save an assignee/status filter and reapply it with one click.
+- Dark mode: switch it on in Settings > Profile > Appearance.
+- Keyboard shortcuts: press ? to see them all.
+- Bulk delete: tick several tasks and delete them together.
+
 ## v1.4 - 2026-11-01
 
 A fresh new look

@@ -7,7 +7,7 @@
   "keyboardShortcuts": true,
   "bulkDelete": true,
   "hideSlack": false,
-  "dueReminders": false,
+  "dueReminders": true,
   "projectDescription": false,
   "brokenDeploy": false
 }

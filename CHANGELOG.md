@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.8 - 2026-11-01
+
+Due-date reminders
+
+- New "Due-date reminders" toggle in Settings > Notifications.
+
 ## v1.7 - 2026-11-01
 
 Slack integration is back

@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.19 - 2026-11-01
+
+"Export to CSV" is now "Download CSV"
+
+- The "Export to CSV" button is now "Download CSV".
+
 ## v1.18 - 2026-11-01
 
 "Switch plan" is now "Change plan"

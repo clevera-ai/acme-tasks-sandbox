@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1 - 2026-11-01
+
+Export your projects to CSV
+
+- New "Export to CSV" button on the Projects list downloads all of your projects (name, colour, status, task counts) as a CSV file.
+
 ## v1.0 - 2026-10-31
 
 Initial release of Acme Tasks.

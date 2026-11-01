@@ -1,5 +1,5 @@
 {
-  "exportCsv": false,
+  "exportCsv": true,
   "addPeople": false,
   "taskLabels": false,
   "savedFilters": false,

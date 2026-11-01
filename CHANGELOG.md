@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.22 - 2026-11-01
+
+"Integrations" is now "Apps"
+
+- The "Integrations" item in the sidebar is now called "Apps".
+
 ## v1.21 - 2026-11-01
 
 "Create task" is now "Add task"

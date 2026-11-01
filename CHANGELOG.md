@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.4 - 2026-11-01
+
+A fresh new look
+
+- New teal accent colour, rounder corners and roomier spacing throughout the app.
+- No changes to wording or how anything works.
+
 ## v1.3 - 2026-11-01
 
 Clearer button labels and headings

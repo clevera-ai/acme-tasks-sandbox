@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.15 - 2026-11-01
+
+"New project" is now "Add project"
+
+- The "New project" button on the Projects page is now "Add project".
+
 ## v1.14 - 2026-11-01
 
 "All projects" is now "Your projects"

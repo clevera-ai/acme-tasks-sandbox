@@ -2,11 +2,12 @@ import { useState, type FormEvent } from 'react'
 import { signIn } from '../lib/store'
 import { DEMO_EMAIL } from '../lib/util'
 import { Button, TextField } from '../components/ui'
+import { verifyTotp } from '../lib/totp'
 
 const PASSWORD = 'AcmeDemo!2026'
 const CODE = '424242'
 
-export default function Login({ mode }: { mode: 'password' | 'password_code' }) {
+export default function Login({ mode }: { mode: 'password' | 'password_code' | 'password_totp' }) {
   const [step, setStep] = useState<'credentials' | 'code'>('credentials')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -17,12 +18,13 @@ export default function Login({ mode }: { mode: 'password' | 'password_code' }) 
     e.preventDefault()
     if (email.trim().toLowerCase() !== DEMO_EMAIL || password !== PASSWORD) return setError('Incorrect email or password.')
     setError('')
-    if (mode === 'password_code') setStep('code')
+    if (mode !== 'password') setStep('code')
     else signIn(DEMO_EMAIL)
   }
-  const submitCode = (e: FormEvent) => {
+  const submitCode = async (e: FormEvent) => {
     e.preventDefault()
-    if (code.trim() !== CODE) return setError("That code isn't right. Check the 6-digit code and try again.")
+    const right = mode === 'password_totp' ? await verifyTotp(code.trim()) : code.trim() === CODE
+    if (!right) return setError("That code isn't right. Check the 6-digit code and try again.")
     signIn(DEMO_EMAIL)
   }
 
@@ -47,7 +49,9 @@ export default function Login({ mode }: { mode: 'password' | 'password_code' }) 
           <form onSubmit={submitCode} noValidate className="space-y-4">
             <div>
               <h1 className="text-xl font-semibold">Enter your verification code</h1>
-              <p className="mt-1 text-sm text-muted">We sent a 6-digit code to {DEMO_EMAIL}.</p>
+              <p className="mt-1 text-sm text-muted">
+                {mode === 'password_totp' ? 'Open your authenticator app and enter the 6-digit code for Acme Tasks.' : `We sent a 6-digit code to ${DEMO_EMAIL}.`}
+              </p>
             </div>
             <TextField label="6-digit code" inputMode="numeric" autoComplete="one-time-code" maxLength={6} value={code} autoFocus onChange={(e) => setCode(e.target.value)} />
             {error && <p role="alert" className="text-sm text-red-600">{error}</p>}

@@ -11,9 +11,10 @@ A small, fake task-management SaaS used as a **test target** for Clevera (screen
 |---|---|
 | Email | `demo@acme-tasks.test` |
 | Password | `AcmeDemo!2026` |
-| 6-digit code (when enabled) | `424242` |
+| 6-digit code (`password_code`) | `424242` |
+| Authenticator key (`password_totp`) | `JBSWY3DPEHPK3PXP` (TOTP, SHA-1, 6 digits, 30 s) |
 
-Whether you are asked to sign in depends on `src/config/auth.json` (`none`, `password`, `password_code`).
+Whether you are asked to sign in depends on `src/config/auth.json` (`none`, `password`, `password_code`, `password_totp`).
 
 ## Reset the data
 
@@ -27,7 +28,7 @@ Projects (list, create, rename, archive/unarchive), Tasks (create, status, edit,
 
 | File | Purpose |
 |---|---|
-| `src/config/auth.json` | `{ "mode": "none" \| "password" \| "password_code" }` |
+| `src/config/auth.json` | `{ "mode": "none" \| "password" \| "password_code" \| "password_totp" }` |
 | `src/config/flags.json` | Feature flags. All features are built in and off by default |
 | `src/config/copy.json` | Button labels and headings |
 | `src/config/theme.json` | Colours and spacing |
@@ -37,7 +38,7 @@ Projects (list, create, rename, archive/unarchive), Tasks (create, status, edit,
 ```sh
 npm run build
 
-npm run auth -- <none|password|password_code> [--no-push]   # commits "Auth mode: ..." and pushes
+npm run auth -- <none|password|password_code|password_totp> [--no-push]   # commits "Auth mode: ..." and pushes
 npm run release -- <id> [--no-push]                         # apply releases/<id>.json
 npm run release -- --revert <id> [--no-push]                # new commit undoing a set
 ```

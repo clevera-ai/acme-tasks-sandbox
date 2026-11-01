@@ -148,7 +148,7 @@ export default function App() {
     document.documentElement.dataset.theme = flags.darkMode && theme === 'dark' ? 'dark' : 'light'
   }, [theme])
 
-  if (auth.mode !== 'none' && !session) return <Login mode={auth.mode as 'password' | 'password_code'} />
+  if (auth.mode !== 'none' && !session) return <Login mode={auth.mode as 'password' | 'password_code' | 'password_totp'} />
   return (
     <Routes>
       <Route element={<Layout />}>

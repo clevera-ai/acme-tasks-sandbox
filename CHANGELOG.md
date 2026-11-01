@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.9 - 2026-11-01
+
+Project descriptions
+
+- Projects now have a description field: add it when creating or renaming a project, and read it on the Projects list and project page.
+
 ## v1.8 - 2026-11-01
 
 Due-date reminders

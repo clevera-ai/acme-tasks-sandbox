@@ -8,6 +8,6 @@
   "bulkDelete": true,
   "hideSlack": false,
   "dueReminders": true,
-  "projectDescription": false,
+  "projectDescription": true,
   "brokenDeploy": false
 }
